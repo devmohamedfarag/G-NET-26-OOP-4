@@ -1,5 +1,4 @@
-﻿#region Part01:
-
+﻿
 #region Question01:
 // Q1 : What is the difference between static binding and dynamic binding? When does each one happen?
 //
@@ -36,4 +35,42 @@
 //        * override: is used in the derived class to indicate
 //          that a method is overriding a virtual method in the base class.
 #endregion
+
+#region Part02: Ticket Booking System
+namespace AssignmentOOP04
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.Write("Enter Cinema Name: ");
+            string cinemaName = Console.ReadLine();
+           
+            Cinema cinema = new Cinema(cinemaName);
+
+            cinema.OpenCinema();
+
+            Ticket t1 = new StandardTicket("Inception", 150, "A-5");
+            Ticket t2 = new VIPTicket("Avengers", 200, true);
+            Ticket t3 = new IMAXTicket("Dune", 180, false);
+
+            cinema.AddTicket(t1);
+            cinema.AddTicket(t2);
+            cinema.AddTicket(t3);
+
+            Console.WriteLine("\n=============== SetPrice Test=============");
+            t1.SetPrice(150);
+            t1.SetPrice(100, 1.5m);
+
+            Console.WriteLine("\n=============== All Tickets =============");
+            cinema.PrintAllTickets();
+
+            Cinema.ProcessTicket(t2);
+
+            cinema.CloseCinema();
+           
+            Console.ReadKey();
+        }
+    }
+}
 #endregion
