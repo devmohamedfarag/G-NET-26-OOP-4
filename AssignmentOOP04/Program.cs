@@ -23,7 +23,17 @@
 // Q2: What is the difference between method overloading and method overriding?
 
 //Answer: Method overloading: is when you have multiple methods in the same class with the same name but different parameters (different type, number, or order of parameters).
-  
+
 //        Method overriding: is when a subclass provides a specific implementation of a method that is already defined in its superclass.
+#endregion
+
+#region Qusetion03:
+// Q3: What keywords are used for Method Overriding? What does each one mean ?
+
+//Answer: The keywords used for method overriding are:.
+//        * virtual: is used in the base class to indicate
+//          that a method can be overridden in a derived class.
+//        * override: is used in the derived class to indicate
+//          that a method is overriding a virtual method in the base class.
 #endregion
 #endregion
