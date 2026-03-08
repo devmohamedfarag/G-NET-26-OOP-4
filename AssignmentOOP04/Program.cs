@@ -19,4 +19,11 @@
 //        Polymorphism.
 #endregion
 
+#region Question02:
+// Q2: What is the difference between method overloading and method overriding?
+
+//Answer: Method overloading: is when you have multiple methods in the same class with the same name but different parameters (different type, number, or order of parameters).
+  
+//        Method overriding: is when a subclass provides a specific implementation of a method that is already defined in its superclass.
+#endregion
 #endregion
